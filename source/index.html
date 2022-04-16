@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Plink</title>
   <body class="page__body">
-    <header class="page-header">
+    <header class="container page-header">
       <a class="page-header__logo">
         <img src="/source/img/logotype-white-desktop.svg" height="40px" width="148px" alt="logo">
       </a>
@@ -12,11 +12,56 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list>
-
+        <div class=" main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list_item--active">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Где нас найти?</a>
+          </li>
+          </ul>
         </div>
       </nav>
     </header>
+    <main class="page-main">
+      <div class="container baner__wrapper">
+        <h1>Взгляните<br>на жизнь<br>иначе!</h1>
+        <a href="#" class="button button__baner"><span>Скачать приложение</span></a>
+        <div class="baner-icon__row">
+          <a href="#" class="icon__apple"><img src="/source/img/apple-logo.svg" alt="logo"></a>
+          <a href="#" class="icon__android"><img src="/source/img/android-logo.svg" alt="logo"></a>
+          <a href="#" class="icon__windows"><img src="#" alt="logo"></a>
+        </div>
+        <p class="baner__subtitle">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
+        <img src="/source/img/phone.png" class="baner__img" width="1050" height="645" alt="phone">
+      </div>
+      <section class="container features">
+        <h1 class="features__title">Устали от серости мегаполиса?<br>Нам есть, что вам<br>предложить!</h1>
+        <ul class="features-list">
+          <li class="features-item">
+            <img src="/source/img/iphone1.png" class="features__img" alt="phone">
+            <h2 class="features__subtitle">Поднимает настроение</h2>
+            <p class="features__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features-item">
+            <img src="/source/img/iphone1.png" class="features__img" alt="phone">
+            <h2 class="features__subtitle">Меняет мир вокруг</h2>
+            <p class="features__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features-item">
+            <img src="/source/img/iphone1.png" class="features__img" alt="phone">
+            <h2 class="features__subtitle">Поднимает настроение</h2>
+            <p class="features__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
