@@ -1,138 +1,150 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Plink</title>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plink</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<page>
   <body class="page__body">
     <header class="container page-header">
-      <a class="page-header__logo">
-        <img src="/source/img/logotype-white-desktop.svg" height="40px" width="148px" alt="logo">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <a class="page-header__logo">
+          <img src="/img/logotype-white-desktop.svg" height="40px" width="148px" alt="logo">
+        </a>
+        <button class="main-nav__toggle hidden__button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class=" main-nav__wrapper">
           <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list_item--active">
-            <a href="#">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Где нас найти?</a>
-          </li>
+            <li class="site-list__item site-list_item--active">
+              <a class="main-nav__link" href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="main-nav__link" href="#">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="main-nav__link" href="#">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="main-nav__link" href="#">Где нас найти?</a>
+            </li>
           </ul>
         </div>
       </nav>
-    </header>
-    <main class="page-main">
-      <div class="container baner__wrapper">
-        <h1>Взгляните<br>на жизнь<br>иначе!</h1>
-        <a href="#" class="button button__baner"><span>Скачать приложение</span></a>
-        <div class="baner-icon__row">
-          <a href="#" class="icon__apple"><img src="/source/img/apple-logo.svg" alt="logo"></a>
-          <a href="#" class="icon__android"><img src="/source/img/android-logo.svg" alt="logo"></a>
-          <a href="#" class="icon__windows"><img src="#" alt="logo"></a>
-        </div>
-        <p class="baner__subtitle">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
-      </div>
-      <div class="slogan"><h1 class="slogan__title">Устали от серости мегаполиса?<br>Нам есть, что вам<br>предложить!</h1></div>
-      <section class="container features">
-        <ul class="features-list">
-          <li class="features-item">
-            <h2 class="features__subtitle">Поднимает настроение</h2>
-            <p class="features__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="features-item">
-            <h2 class="features__subtitle">Меняет мир вокруг</h2>
-            <p class="features__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="features-item">
-            <h2 class="features__subtitle">Заводит новых друзей</h2>
-            <p class="features__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <div class="more">
-          <h2 class="more__title">Эфект на 24 часа!</h2>
-          <p class="more__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="more__link">Узнать больше об исследовании</a>
-        </div>
-      </section>
-      <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                привычные серые вещи! А еще я познакомился со своей будущей женой в
-                комментариях к выложенной фотографии!»
-              </p>
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__author-info">25 лет, водитель трамвая</p>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-              </p>
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__author-info">25 лет, водитель трамвая</p>
-            </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                привычные серые вещи! А еще я познакомился со своей будущей женой в
-                комментариях к выложенной фотографии!»
-              </p>
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__author-info">25 лет, водитель трамвая</p>
-              <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-              <button class="reviews__next" type="button">Следующий отзыв</button>
-            </blockquote>
+      <main class="page-main">
+        <div class="container baner__wrapper">
+          <h1>Взгляните<br>на жизнь<br>иначе!</h1>
+          <a href="#" class="button button__baner"><span>Скачать приложение</span></a>
+          <div class="baner-icon__row">
+            <a href="#" class="icon__apple"><img src="/source/img/apple-logo.svg" alt="logo"></a>
+            <a href="#" class="icon__android"><img src="/source/img/android-logo.svg" alt="logo"></a>
+            <a href="#" class="icon__windows"><img src="#" alt="logo"></a>
           </div>
+          <p class="baner__subtitle">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
         </div>
-      </section>
-      <section class="price">
-        <div class="price__table">
+    </header>
+    <div class="slogan">
+      <h1 class="slogan__title">Устали от серости мегаполиса?<br>Нам есть, что вам<br>предложить!</h1>
+    </div>
+    <section class="container features">
+      <ul class="features-list">
+        <li class="features-item">
+          <h2 class="features__subtitle">Поднимает настроение</h2>
+          <p class="features__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+            кликов!</p>
+        </li>
+        <li class="features-item">
+          <h2 class="features__subtitle">Меняет мир вокруг</h2>
+          <p class="features__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+            эффект</p>
+        </li>
+        <li class="features-item">
+          <h2 class="features__subtitle">Заводит новых друзей</h2>
+          <p class="features__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+      <div class="more">
+        <h2 class="more__title">Эфект на 24 часа!</h2>
+        <p class="more__text">Британские ученые провели исследования и доказали, что положительный эффект от
+          использования приложения длится целые сутки!</p>
+        <a class="more__link">Узнать больше об исследовании</a>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в
+              комментариях к выложенной фотографии!»
+            </p>
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews__author-info">25 лет, водитель трамвая</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+            </p>
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews__author-info">25 лет, водитель трамвая</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в
+              комментариях к выложенной фотографии!»
+            </p>
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews__author-info">25 лет, водитель трамвая</p>
+            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__next" type="button">Следующий отзыв</button>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <section class="price">
+      <div class="price__table">
         <table>
           <thead>
-          <tr>
-            <th class="price-table__header price-table__header--empty"></th>
-            <th class="price-table__header price-table__header--tariff">База</th>
-            <th class="price-table__header price-table__header--tariff price-table__header--hit">Стандарт</th>
-            <th class="price-table__header price-table__header--tariff">Анлим</th>
-          </tr>
+            <tr>
+              <th class="price-table__header price-table__header--empty"></th>
+              <th class="price-table__header price-table__header--tariff">База</th>
+              <th class="price-table__header price-table__header--tariff price-table__header--hit">Стандарт</th>
+              <th class="price-table__header price-table__header--tariff">Анлим</th>
+            </tr>
           </thead>
           <thead>
             <tr>
-            <th class="pricing-table__header pricing-table__header--empty"></th>
-            <th class="pricing-table__header pricing-table__header--price">1,99 USD</th>
-            <th class="pricing-table__header pricing-table__header--price">3,99 USD</th>
-            <th class="pricing-table__header pricing-table__header--price">9,99 USD</th>
+              <th class="pricing-table__header pricing-table__header--empty"></th>
+              <th class="pricing-table__header pricing-table__header--price">1,99 USD</th>
+              <th class="pricing-table__header pricing-table__header--price">3,99 USD</th>
+              <th class="pricing-table__header pricing-table__header--price">9,99 USD</th>
             </tr>
           </thead>
           <tbody>
-          <tr>
-            <td class="pricing-table__cell pricing-table__cell--feature pricing-table__cell--filter">Розовый фильтр</td>
-            <td class="pricing-table__cell pricing-table__cell--yes pricing-table__cell--filter"></td>
-            <td class="pricing-table__cell pricing-table__cell--yes pricing-table__cell--filter"></td>
-            <td class="pricing-table__cell pricing-table__cell--yes pricing-table__cell--filter"></td>
-          </tr>
-          <tr>
-            <td class="pricing-table__cell pricing-table__cell--feature pricing-table__cell--smile">Смайлики</td>
-            <td class="pricing-table__cell pricing-table__cell--no pricing-table__cell--smile"></td>
-            <td class="pricing-table__cell pricing-table__cell--yes pricing-table__cell--smile"></td>
-            <td class="pricing-table__cell pricing-table__cell--yes pricing-table__cell--smile"></td>
-          </tr>
+            <tr>
+              <td class="pricing-table__cell pricing-table__cell--feature pricing-table__cell--filter">Розовый фильтр
+              </td>
+              <td class="pricing-table__cell pricing-table__cell--yes pricing-table__cell--filter"></td>
+              <td class="pricing-table__cell pricing-table__cell--yes pricing-table__cell--filter"></td>
+              <td class="pricing-table__cell pricing-table__cell--yes pricing-table__cell--filter"></td>
+            </tr>
+            <tr>
+              <td class="pricing-table__cell pricing-table__cell--feature pricing-table__cell--smile">Смайлики</td>
+              <td class="pricing-table__cell pricing-table__cell--no pricing-table__cell--smile"></td>
+              <td class="pricing-table__cell pricing-table__cell--yes pricing-table__cell--smile"></td>
+              <td class="pricing-table__cell pricing-table__cell--yes pricing-table__cell--smile"></td>
+            </tr>
             <td class="pricing-table__cell pricing-table__cell--feature pricing-table__cell--coment">Комментарии</td>
             <td class="pricing-table__cell pricing-table__cell--no pricing-table__cell--coment"></td>
             <td class="pricing-table__cell pricing-table__cell--no pricing-table__cell--coment"></td>
             <td class="pricing-table__cell pricing-table__cell--yes pricing-table__cell--coment"></td>
           </tbody>
         </table>
-        </div>
-      </section>
+      </div>
+    </section>
     </main>
     <footer class="page-footer">
       <div class="contact">
@@ -155,13 +167,14 @@
       <div class="modal__map">
       </div>
       <div class="footer">
-        <img class="footer__img" src="/source/img/logotypebluedesktop.png">
+        <img class="footer__img" src="/source/img/logotypebluedesktop.png" alt="social">
         <ul class="footer-social__list">
-          <li class="footer-social__item"><img class="social_img" src="TW"></li>
-          <li class="footer-social__item"><img class="social_img" src="FB"></li>
-          <li class="footer-social__item"><img class="social_img" src="YU"></li>
+          <li class="footer-social__item"><img class="social_img" src="TW" alt="social"></li>
+          <li class="footer-social__item"><img class="social_img" src="FB" alt="social"></li>
+          <li class="footer-social__item"><img class="social_img" src="YU" alt="social"></li>
         </ul>
       </div>
     </footer>
   </body>
+</page>
 </html>
